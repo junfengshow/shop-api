@@ -27,7 +27,7 @@
   },
   "scripts": {
     "dev": "egg-bin dev --port=7002",
-    "start:prod": "egg-scripts start --daemon --title=blog-server --port=7002",
+    "start:prod": "egg-scripts start --daemon --title=blog-server",
     "stop:prod": "egg-scripts stop --title=blog-server",
     "autod": "autod",
     "lint": "eslint .",
