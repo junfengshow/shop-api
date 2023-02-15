@@ -1,55 +1,27 @@
 {
-  "name": "blog-service",
+  "name": "shop-api",
   "version": "1.0.0",
   "description": "",
-  "dependencies": {
-    "egg": "^2.10.0",
-    "egg-scripts": "^2.5.0",
-    "egg-sequelize": "^4.3.1",
-    "jsonwebtoken": "^8.5.1",
-    "moment": "^2.29.2",
-    "mysql2": "^2.3.3",
-    "qiniu": "^7.6.0",
-    "uuid": "^8.3.2"
-  },
-  "devDependencies": {
-    "autod": "^3.0.1",
-    "autod-egg": "^1.0.0",
-    "egg-bin": "^4.3.7",
-    "egg-mock": "^3.19.2",
-    "eslint": "^4.18.1",
-    "eslint-config-egg": "^7.0.0",
-    "factory-girl": "^5.0.2",
-    "sequelize-cli": "^4.0.0"
-  },
-  "engines": {
-    "node": ">=8.0.0"
-  },
+  "main": "index.js",
   "scripts": {
-    "dev": "egg-bin dev --port=7002",
-    "start:prod": "egg-scripts start --daemon --title=blog-server --port=7002",
-    "stop:prod": "egg-scripts stop --title=blog-server",
-    "autod": "autod",
-    "lint": "eslint .",
-    "test": "egg-bin test",
-    "cov": "egg-bin cov",
-    "ci": "npm run lint && NODE_ENV=test npx sequelize db:migrate && npm run cov"
+    "start": "node index.js",
+    "build": "node index.js"
   },
-  "ci": {
-    "version": "8"
-  },
-  "eslintIgnore": [
-    "coverage",
-    "dist"
-  ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/junfengshow/shop-api.git"
   },
-  "files": [
-    "lib",
-    "index.js"
-  ],
+  "keywords": [],
   "author": "",
-  "private": true
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junfengshow/shop-api/issues"
+  },
+  "homepage": "https://github.com/junfengshow/shop-api#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@vercel/node": "^2.9.4"
+  }
 }
