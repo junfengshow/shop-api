@@ -1,7 +1,3 @@
-#!/usr/bin/env node
-
-// module.exports = app;
-// "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
 const express = require("express");
 async function start() {
   const app = express();
